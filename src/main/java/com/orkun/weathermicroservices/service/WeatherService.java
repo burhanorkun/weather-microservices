@@ -92,6 +92,7 @@ public class WeatherService {
     private WeatherEntity saveWeatherEntity(String city, WeatherResponse response) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
         WeatherEntity weatherEntity = new WeatherEntity(
+                null,
                 city,
                 response.location().name(),
                 response.location().country(),
